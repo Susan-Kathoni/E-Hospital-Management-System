@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { DocDashboardComponent } from './doc-dashboard/doc-dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
     NavbarComponent,
-    HomepageComponent
+    HomepageComponent,
+    DocDashboardComponent
   ],
   imports: [
     BrowserModule,
