@@ -50,6 +50,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 Copyright (c) 2020 
 
 ## Links
-Frontend - https://github.com/Susan-Kathoni/E-Hospital-Management-System
-Backend - https://github.com/Rodgersouko/HM-System--Django
+- Frontend - https://github.com/Susan-Kathoni/E-Hospital-Management-System
+- Backend - https://github.com/Rodgersouko/HM-System--Django
 
