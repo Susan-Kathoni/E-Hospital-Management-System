@@ -1,0 +1,19 @@
+<div fxLayoutAlign="center center" fxFlexFill class="main-div">
+  <mat-card fxFlex="25">
+    <mat-toolbar color="primary">Login Page</mat-toolbar>
+    <form fxLayoutAlign="stretch" fxLayout="column" class="login-form">
+      <mat-form-field>
+        <input #username matInput placeholder="Username">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input #password matInput type="password" placeholder="Password">
+      </mat-form-field>
+      <button mat-raised-button type="submit" color="primary" type="button"
+        (click)="login(username.value, password.value)" class="btn btn-primary" routerLink="/home">Login</button>
+      <p class="text-center"> Register account? <a routerLink="/register" style="color:#384997;">Sign up here</a></p>
+    </form>
+
+
+  </mat-card>
+</div>

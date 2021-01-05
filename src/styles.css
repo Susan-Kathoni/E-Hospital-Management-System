@@ -93,7 +93,7 @@ a.navbar-brand {
 /* banner */
 
 .banner {
-	background: url(../src/css/images/banner.jpg) bottom no-repeat;
+	background: url('/src/css/images/banner.jpg') bottom no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -103,7 +103,7 @@ a.navbar-brand {
 }
 
 .inner-banner {
-	background: url(../src/css/images/slide.jpg)no-repeat;
+	background: url('/src/css/images/slide.jpg')no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -437,7 +437,7 @@ a.link-agile {
 /*-- services --*/
 
 div#agileits-services {
-	/* background: url(../images/s2.jpg) no-repeat center; */
+	background: url('/images/s2.jpg') no-repeat center;
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -573,7 +573,7 @@ h3.w3ls-title {
 }
 
 .clients-right {
-	background: url(../src/css/images/client.jpg) no-repeat 0px 0px;
+	background: url('/src/css/images/client.jpg') no-repeat 0px 0px;
 	background-size: cover;
 	-webkit-background-size: cover;
 	-o-background-size: cover;
@@ -668,7 +668,7 @@ h3.w3ls-title {
 }
 
 div#testimonials {
-	background: url(../src/css/images/testi.jpg) center no-repeat;
+	background: url('/src/css/images/testi.jpg') center no-repeat;
 	background-size: cover;
 	padding: 5em;
 }
@@ -789,14 +789,14 @@ div#testimonials {
 
 .nbs-flexisel-nav-left {
 	right: 11%;
-	background: url(../src/css/images/right.png) no-repeat 14px 12px #008eff;
+	background: url('/src/css/images/right.png') no-repeat 14px 12px #008eff;
 	border: 1px solid #008eff;
 	border-radius: 20px 0 0 20px;
 }
 
 .nbs-flexisel-nav-right {
 	right: 8%;
-	background: url(../src/css/images/left.png) no-repeat 14px 12px #008eff;
+	/* background: url(../src/css/images/left.png) no-repeat 14px 12px #008eff; */
 	border-radius: 0 20px 20px 0;
 }
 
@@ -839,7 +839,7 @@ a.blog-btn {
 /* //blog */
 
 section.agile_stats {
-	background: url(../src/css/images/stats.jpg) no-repeat center;
+	background: url('/src/css/images/stats.jpg') no-repeat center;
 	background-size: cover;
 }
 
@@ -1183,12 +1183,12 @@ hr {
 }
 
 .triple-sec:nth-child(1) {
-	background: url(../src/css/images/g2.jpg) no-repeat center;
+	background: url('/src/css/images/g2.jpg') no-repeat center;
 	background-size: cover;
 }
 
 .triple-sec:nth-child(3) {
-	background: url(../src/css/images/g7.jpg) no-repeat center;
+	background: url('/src/css/images/g7.jpg') no-repeat center;
 	background-size: cover;
 	position: relative;
 	z-index: 0;
@@ -1321,7 +1321,7 @@ span.apt-t2 {
 
 .agile-caption {
 	padding: 12em 3em 10em;
-	/* background: url(../src/css/images/4.jpg) 0px -23px no-repeat; */
+	background: url('/src/css/images/4.jpg') 0px -23px no-repeat;
 	min-height: 430px;
 	background-size: cover;
 }
@@ -1451,7 +1451,7 @@ h5.sub-title-wthree {
 /*-- services --*/
 
 div#agileits-services {
-	/* background: url(../src/css/images/s2.jpg) no-repeat center; */
+	background: url('/src/css/images/s2.jpg') no-repeat center;
 	background-size: cover;
 	background-attachment: fixed;
 }
