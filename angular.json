@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "E-Hospital-Management-System"
+  "defaultProject": "E-Hospital-Management-System",
+  "cli": {
+    "analytics": "1febd659-e533-4af4-a81a-92f45baf37d5"
+  }
 }
