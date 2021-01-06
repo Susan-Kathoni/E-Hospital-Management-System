@@ -7,6 +7,9 @@ import { Observable,of } from 'rxjs';
   providedIn: 'root'
 })
 export class AuthService {
+  isAuthenticated() {
+    throw new Error('Method not implemented.');
+  }
   private apiRoot = ' https://backend-hood.herokuapp.com/auth/signup/';
 
   constructor(private http: HttpClient) {}
