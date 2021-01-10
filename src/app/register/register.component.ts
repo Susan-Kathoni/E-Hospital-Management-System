@@ -1,35 +1,42 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from '../models/auth.service';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { User } from '../models/user.model';
-import { LoginService } from '../models/login.service';
-
-
+import { MatSnackBar } from '@angular/material/snack-bar';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
-  styleUrls: ['./register.component.css']
+  styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent implements OnInit {
-  error: any;
-  user: User = new User;
+  registerForm!: FormGroup;
   
+  constructor(private formBuilder: FormBuilder, private router: Router, private _snackBar: MatSnackBar) { }
 
-  constructor(public loginService: LoginService,
-    private authService: AuthService,private router: Router) { }
-
-  ngOnInit(): void {
-
+  ngOnInit() {
+    this.registerForm = this.formBuilder.group({
+      firstname: ['', Validators.required],
+      lastname: ['', Validators.required],
+      username: ['', Validators.required],
+      password: ['', Validators.required]
+    });
   }
 
-  signupUser(Username: string,Email: string, Password1: string, Password2: string) {
-    console.log('Username,Email,Password1,Password2 ', Username,Email,Password1,Password2);
+  get data() { return this.registerForm.controls; }
 
-    this.authService.signup(Username, Email, Password1, Password2).subscribe(
-      (success) => {
-        this.router.navigate(['/homepage']);
-      },
-      (error) => (this.error = error)
-    );
+  onSubmit() {    
+    if (this.registerForm.invalid) {
+      return;
+    } else {
+      localStorage.setItem("firstname", this.data.firstname.value);
+      localStorage.setItem("lastname", this.data.lastname.value);
+      localStorage.setItem("username", this.data.username.value);
+      localStorage.setItem("password", this.data.password.value);
+      this._snackBar.open('Register Successfully', 'Success', {
+        duration: 2000,
+      });
+      this.router.navigate(['/login']);
+    }
   }
 }
+
+
