@@ -16,7 +16,7 @@ export class RegisterComponent implements OnInit {
     this.registerForm = this.formBuilder.group({
       firstname: ['', Validators.required],
       lastname: ['', Validators.required],
-      username: ['', Validators.required],
+      email: ['', Validators.required],
       password: ['', Validators.required]
     });
   }
@@ -29,7 +29,7 @@ export class RegisterComponent implements OnInit {
     } else {
       localStorage.setItem("firstname", this.data.firstname.value);
       localStorage.setItem("lastname", this.data.lastname.value);
-      localStorage.setItem("username", this.data.username.value);
+      localStorage.setItem("email", this.data.email.value);
       localStorage.setItem("password", this.data.password.value);
       this._snackBar.open('Register Successfully', 'Success', {
         duration: 2000,

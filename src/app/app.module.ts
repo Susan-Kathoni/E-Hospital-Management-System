@@ -1,11 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { HomepageComponent } from './homepage/homepage.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -25,7 +25,6 @@ import { DoctorLoginComponent } from './doctor-login/doctor-login.component';
     AppComponent,
     LandingPageComponent,
     NavbarComponent,
-    HomepageComponent,
     LoginComponent,
     RegisterComponent,
     PatientLoginComponent,
@@ -43,6 +42,7 @@ import { DoctorLoginComponent } from './doctor-login/doctor-login.component';
     FormsModule,
     MatToolbarModule,
     MatSnackBarModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
