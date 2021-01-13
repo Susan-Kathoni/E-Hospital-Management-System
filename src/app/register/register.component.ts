@@ -31,6 +31,7 @@ export class RegisterComponent implements OnInit {
       localStorage.setItem("lastname", this.data.lastname.value);
       localStorage.setItem("email", this.data.email.value);
       localStorage.setItem("password", this.data.password.value);
+      localStorage.setItem("user", this.data.user.value);
       this._snackBar.open('Register Successfully', 'Success', {
         duration: 2000,
       });

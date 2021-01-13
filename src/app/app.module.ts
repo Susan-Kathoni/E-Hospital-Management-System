@@ -6,7 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
@@ -25,7 +24,6 @@ import { DoctorLoginComponent } from './doctor-login/doctor-login.component';
     AppComponent,
     LandingPageComponent,
     NavbarComponent,
-    LoginComponent,
     RegisterComponent,
     PatientLoginComponent,
     DoctorLoginComponent,
